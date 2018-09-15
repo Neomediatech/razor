@@ -56,7 +56,7 @@ class RequestHandler(StreamRequestHandler):
 
         try:
             #proc = subprocess.Popen(['/usr/bin/razor-check', '-logfile=/razor.log'], stderr=subprocess.PIPE,
-            proc = subprocess.Popen(['/usr/bin/razor-check', '-dl=5', '-logfile=/proc/1/fd/1'], stderr=subprocess.PIPE,
+            proc = subprocess.Popen(['/usr/bin/razor-check', '-dl=3', '-logfile=/proc/1/fd/1'], stderr=subprocess.PIPE,
                                     stdin=subprocess.PIPE,
                                     stdout=subprocess.PIPE)
         except OSError as e:
