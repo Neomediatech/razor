@@ -6,7 +6,7 @@ This image contains razor software taken from Alpine repository and "daemonized"
 This image contains parts of @cgt rspamd-plugins work (MIT license).
 
 ## Usage
- - docker run -p 0.0.0.0:9192:9192 --name razor neomediatech/razor:latest
+ - docker run -d -p 0.0.0.0:9192:9192 --name razor neomediatech/razor:latest
  - point your mailserver to this container on port 9192
  
  
