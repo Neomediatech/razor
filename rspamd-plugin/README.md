@@ -22,5 +22,3 @@ modules {
 ```
 
 Put [razor.lua](../razor.lua) in `/etc/rspamd` folder
-
-...todo...
