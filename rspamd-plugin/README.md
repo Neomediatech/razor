@@ -16,7 +16,6 @@ razor {
 }
 
 modules {
-    path = "$PLUGINSDIR/lua/"
     path = "$CONFDIR/razor.lua"
 }
 ```
