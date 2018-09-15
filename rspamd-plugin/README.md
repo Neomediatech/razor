@@ -6,6 +6,7 @@ Distributed under the MIT license.
 
 ## Usage
 in /etc/rspamd/rspamd.conf.local put this sections:
+```
 razor {
     host = 127.0.0.1;
     port = 9192;
@@ -15,5 +16,6 @@ modules {
     path = "$PLUGINSDIR/lua/"
     path = "$CONFDIR/razor.lua"
 }
+```
 
 ...todo...
