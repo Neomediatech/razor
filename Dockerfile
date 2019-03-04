@@ -12,4 +12,4 @@ COPY razor/razorsocket.py /razorsocket.py
 RUN chmod +x /razorsocket.py
 EXPOSE 9192
 HEALTHCHECK --interval=30s --timeout=30s --start-period=20s --retries=20 CMD nc -w 7 -zv 0.0.0.0 9192
-CMD ["/razorsocket.py", "0.0.0.0", "9192"]
+CMD ["tini", "-e", "137", "--", "/razorsocket.py", "0.0.0.0", "9192"]
