@@ -84,7 +84,7 @@ class Server(ThreadingMixIn, TCPServer):
     pass
 
 def main():
-    argp = argparse.ArgumentParser(description="Expose pyzor on a socket")
+    argp = argparse.ArgumentParser(description="Expose razor on a socket")
     argp.add_argument("addr", help="address to listen on")
     argp.add_argument("port", help="port to listen on")
     args = argp.parse_args()
