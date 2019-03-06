@@ -24,6 +24,7 @@ local function check_razor(task)
         else
             logger.errx(task, "unknown response from razorsocket: %s", resp)
         end
+        logger.infox(task, "razor says about this mail: %s", resp)
     end
 
     tcp.request({
