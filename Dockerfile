@@ -1,8 +1,8 @@
-FROM neomediatech/ubuntu-base
+FROM neomediatech/ubuntu-base:latest
 
 ENV VERSION=2.85-4.2build3 \
     DEBIAN_FRONTEND=noninteractive \
-    SERVICE=razor-ubuntu
+    SERVICE=razor
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
       org.label-schema.version=$VERSION \
