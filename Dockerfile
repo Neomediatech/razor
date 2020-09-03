@@ -1,8 +1,10 @@
-FROM neomediatech/ubuntu-base:latest
+FROM neomediatech/ubuntu-base:20.04
 
-ENV VERSION=2.85-4.2build3 \
+ENV VERSION=2.85-4.2build5 \
     DEBIAN_FRONTEND=noninteractive \
     SERVICE=razor
+
+ARG UPDATE=2020-09-03
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
       org.label-schema.version=$VERSION \
