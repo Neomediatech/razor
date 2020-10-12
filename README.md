@@ -1,3 +1,5 @@
+# +++ Being abandoned in favor of [Neomediatech/razorfy-docker](https://github.com/Neomediatech/razorfy-docker) +++
+
 # Docker image of Vipul's Razor
 This image contains razor software taken from Ubuntu repository and "daemonized" with a python3 script.  
 This image contains parts of @cgt rspamd-plugins work (MIT license).
