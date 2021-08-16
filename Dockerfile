@@ -4,7 +4,7 @@ ENV VERSION=2.85-4.2build5 \
     DEBIAN_FRONTEND=noninteractive \
     SERVICE=razor
 
-ARG UPDATE=2020-09-03
+ARG UPDATE=2021-08-16
 
 LABEL maintainer="docker-dario@neomediatech.it" \ 
       org.label-schema.version=$VERSION \
