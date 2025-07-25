@@ -1,0 +1,14 @@
+-----------------------------------
+ven 25 lug 2025, 13:35:16, UTC --- ghcr.io/neomediatech/razor:latest
+
+Report Summary
+
+┌──────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
+│                      Target                      │  Type  │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
+│ ghcr.io/neomediatech/razor:latest (ubuntu 24.04) │ ubuntu │        0        │    -    │
+└──────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
