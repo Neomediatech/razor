@@ -1,13 +1,9 @@
-FROM neomediatech/ubuntu-base:20.04
+FROM ghcr.io/neomediatech/ubuntu-base:24.04
 
-ENV VERSION=2.85-4.2build5 \
-    DEBIAN_FRONTEND=noninteractive \
+ENV DEBIAN_FRONTEND=noninteractive \
     SERVICE=razor
 
-ARG UPDATE=2021-08-16
-
 LABEL maintainer="docker-dario@neomediatech.it" \ 
-      org.label-schema.version=$VERSION \
       org.label-schema.vcs-type=Git \
       org.label-schema.vcs-url=https://github.com/Neomediatech/${SERVICE} \
       org.label-schema.maintainer=Neomediatech
@@ -15,7 +11,7 @@ LABEL maintainer="docker-dario@neomediatech.it" \
 COPY razor/razorsocket.py /razorsocket.py
 
 RUN apt-get update && apt-get -y dist-upgrade && \
-    apt-get install -y netcat razor python3 && \
+    apt-get install -y netcat-traditional razor python3 && \
     rm -rf /var/lib/apt/lists* && \
     chmod +x /razorsocket.py
 
